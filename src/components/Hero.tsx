@@ -108,7 +108,7 @@ const Hero = () => {
             spacing={"24px"}
             rowSpacing={"32px"}
             container
-            lg={12}
+            xs={12}
           >
             <Grid
               display={"flex"}
@@ -119,11 +119,11 @@ const Hero = () => {
               sm={4}
             >
               <img
-                className="hidden w-full md:block"
+                className="hidden w-full sm:block"
                 src="assets/images/Frame 2897.png"
               />
               <img
-                className="w-full md:hidden"
+                className="w-full sm:hidden"
                 src="assets/images/Frame 2898.png"
               />
             </Grid>
@@ -136,7 +136,10 @@ const Hero = () => {
               sm={2}
               xs={6}
             >
-              <img className="w-full" src="assets/images/image 6.png" />
+              <img
+                className="w-full rounded-md"
+                src="assets/images/image 6.png"
+              />
             </Grid>
 
             <Grid
