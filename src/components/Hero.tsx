@@ -50,12 +50,23 @@ const Hero = () => {
             >
               <img className="w-full" src="assets/images/rocket.png" />
             </Grid>
-            <Grid order={{ xs: 3, sm: 3 }} xs={6} sm={3} xl={4}>
+            <Grid
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              order={{ xs: 3, sm: 3 }}
+              xs={6}
+              sm={3}
+              xl={4}
+            >
               <img
-                className="hidden w-full xl:block"
+                className="hidden w-full 2xl:block"
                 src="assets/images/certs.png"
               />
-              <img className="xl:hidden" src="assets/images/certs-sm.png" />
+              <img
+                className="w-full 2xl:hidden"
+                src="assets/images/certs-sm.png"
+              />
             </Grid>
             <Grid
               padding={1}

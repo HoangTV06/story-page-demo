@@ -1,4 +1,4 @@
-import { Box, Container, Stack, Typography } from "@mui/material";
+import { Box, Container, ImageList, Stack, Typography } from "@mui/material";
 import { data } from "../assets/timeline-data";
 import { galleryData } from "../assets/gallery-data";
 
@@ -18,12 +18,12 @@ const Timeline = () => {
         </Stack>
       </Container>
 
-      <Container className="mb-40" maxWidth="lg">
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <Container className="p-0 mb-40" maxWidth="lg">
+        <ImageList gap={8} cols={3}>
           {galleryData.map((item) => (
             <div className="px-2 py-4 shadow-md rounded-[32px]" key={item.img}>
               <img
-                className="lg:w-[352px] w-full mb-6 rounded-[16px]"
+                className="w-[292px]  md:w-[352px]  mb-6 rounded-[16px]"
                 src={item.img}
                 alt={item.title}
                 loading="lazy"
@@ -58,7 +58,7 @@ const Timeline = () => {
               </Typography>
             </Box>
           </Box>
-        </div>
+        </ImageList>
       </Container>
     </>
   );
