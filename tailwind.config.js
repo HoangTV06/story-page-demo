@@ -8,7 +8,7 @@ export default {
         inter: ["Inter", "sans-serif"],
       },
       backgroundImage: {
-        cta: "url('/assets/images/Frame 2415.png')",
+        cta: "url('/assets/images/Frame 2700.png')",
       },
     },
   },
